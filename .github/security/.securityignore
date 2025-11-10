@@ -1,0 +1,134 @@
+# Security Scan Exclusions
+# Files and patterns listed here will be excluded from security scanning
+# Use standard glob patterns or simple string matching
+
+# ==============================================
+# Security Configuration Files
+# ==============================================
+# TruffleHog rules files (contain patterns that trigger false positives)
+.github/security/rules.yml
+
+# ==============================================
+# Documentation Files
+# ==============================================
+**/CHANGELOG.md
+**/LICENSE
+**/LICENSE.txt
+**/SECURITY.md
+**/docs/**
+
+# ==============================================
+# Test Files and Mock Data
+# ==============================================
+# Test directories
+**/test/**
+**/tests/**
+**/spec/**
+**/specs/**
+**/__tests__/**
+**/*.test.*
+**/*.spec.*
+
+# Mock and fixture files
+**/*.mock
+**/*.fixture
+**/*.example
+**/mock/**
+**/fixtures/**
+**/samples/**
+
+# ==============================================
+# Package Management Files
+# ==============================================
+# Lock files (often contain hashes that trigger false positives)
+**/package-lock.json
+**/yarn.lock
+**/Pipfile.lock
+**/poetry.lock
+**/composer.lock
+**/Gemfile.lock
+
+# ==============================================
+# Binary and Media Files
+# ==============================================
+# Executable files
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+**/*.bin
+**/*.o
+**/*.obj
+
+# Image files
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.bmp
+**/*.svg
+**/*.ico
+**/*.webp
+
+# Media files
+**/*.mp4
+**/*.mp3
+**/*.wav
+**/*.avi
+**/*.mov
+**/*.wmv
+
+# Archive files
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.tgz
+**/*.rar
+**/*.7z
+**/*.gz
+**/*.bz2
+
+# ==============================================
+# IDE and Editor Files
+# ==============================================
+**/.vscode/**
+**/.idea/**
+**/*.swp
+**/*.swo
+**/*~
+
+# ==============================================
+# Version Control Files
+# ==============================================
+**/.git/**
+**/.gitignore
+**/.gitattributes
+**/.gitmodules
+
+# ==============================================
+# CI/CD and Build Files
+# ==============================================
+**/Dockerfile
+**/Dockerfile.*
+**/docker-compose.yml
+**/docker-compose.yaml
+**/.dockerignore
+**/buildspec.yml
+**/.travis.yml
+**/.circleci/**
+
+# GitHub workflow files (except security scanner)
+.github/workflows/*.yml
+.github/workflows/README.md
+.github/security/*
+
+# ==============================================
+# Project Specific Exclusions
+# ==============================================
+# Media Planning MCP Server specific files
+**/requirements.txt
+**/pyproject.toml
+
+# Resource files with example data
+**/resources/**/*.json
+**/prompts/**/*.md
