@@ -1,3 +1,7 @@
 myservice_1234567890abcdef1234567890abcdef
 myservice_1234567890abcdef1234567890abcdef
 myservice_1234567890abcdef1234567890abcdeffff
+
+AWS_SECRET_ACCESS_KEY = "AKIA1234567890ABCDEFG"
+
+password = "SuperSecret123"
