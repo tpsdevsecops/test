@@ -86,6 +86,11 @@
   message: Google Access Token
   pattern: "ya29\\.[0-9A-Za-z\\-_]+"
   severity: MEDIUM
+  
+- id: generic.email
+  message: Generic email address
+  pattern: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+  severity: LOW
 
 - id: google.api-key
   message: Google API Key
