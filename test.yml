@@ -1,1 +1,23 @@
+name: test
 
+  on:
+   push: 
+     branches: 
+       - main
+
+  jobs: 
+    run-on: 
+      group: ubuntu-latest
+
+    steps:  
+     - name: input variable 1 
+       run: echo the 1st variable ${{ input.var1 }}
+     
+     - name: input variable 2 
+       run: echo the 2nd variable ${{ input.var2 }}
+       
+     - name: Run the function
+       uses: ./test.cpp
+         
+     - name: Write the outpout in a file 
+       run: 
