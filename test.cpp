@@ -1,10 +1,18 @@
-#include<stdio.h>
+#include <iostream>
+#include <cstdlib>  // for atoi
 
-int main{
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        std::cout << "Usage: " << argv[0] << " <num1> <num2>\n";
+        return 1;
+    }
 
-  int var1, var2;
-  int sum = var1+var2;
+    int a = std::atoi(argv[1]);
+    int b = std::atoi(argv[2]);
 
-  print("sum", %d);
-  
+    int sum = a + b;
+
+    std::cout << "Sum: " << sum << std::endl;
+
+    return 0;
 }
