@@ -1,0 +1,24 @@
+cd path     # to move to that direct
+cd ..    # go back to parent
+
+ls -a   show all files .env as well
+ls -l  shows file permissions and owner
+
+cat file.y       #create a file
+nano file.y    #to open in editor
+
+top    #to show current running processes 
+
+chmod    to change permissions  4 read 2 write 1 x exection
+chown   to change groups ownership
+
+
+mkdir dirname
+
+rm  dir
+
+echo "mhmhsdafasdfj " >> hjgjg/.txt
+
+
+
+
